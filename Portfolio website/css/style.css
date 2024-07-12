@@ -1,0 +1,162 @@
+body{
+    margin:0;
+    text-align: center;
+    font-family: 'Merriweather', serif;
+    color: #277777;
+    background: #f4f4f4;
+    overflow-x: hidden;
+  }
+
+h1{
+    font-size: 5vw;
+    margin: 50px auto 0 auto;
+}
+
+h2{
+    font-size: 2.5vw;
+    font-weight: normal;
+}
+
+p{
+  font-size: 0.9rem;
+  line-height: 2;
+}
+
+.profile p, .tech_skills p{
+    width: 50%;
+    margin: 10vh auto;
+}
+
+hr{
+  border-style: dotted none none none;  /* is specifying the style for each of the four borders (top, right, bottom, left)  */
+  border-width: 6px;
+  width: 10%;
+  border-color: #277777;
+  margin: 100px auto;
+}
+
+li{
+  line-height: 2;
+}
+
+
+.title_animation {
+  max-width: fit-content;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typewriter;
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  animation-duration: 3s;
+  animation-timing-function: steps(25, end);
+}
+
+.title_animation::after {
+  content: "|";
+  position: absolute;
+  right:-4px;
+  animation: caret infinite;
+  animation-duration: 1s;
+  animation-timing-function: steps(1, end);
+}
+
+@keyframes typewriter {
+  from {width: 0}
+  to {width: 100%}
+}
+@keyframes caret {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+.top-container-picture{
+  padding: 80px 0 80px 0;
+  display: block;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  height: 49vh;
+  width: auto;
+  border-radius: 50%;
+}
+
+.top_container{
+  position: relative;
+  padding-top: 5em;
+  background: #93dcdc;
+}
+
+.mid_container{
+  margin: 100px 0;
+  
+}
+
+.profile_picture{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+  height: auto;
+  width: 150px;
+  border-radius: 50%;
+ }
+
+.website_pictures1{
+  width: 25%;
+  float: left;
+  margin-right: 30px;
+}
+
+.website_pictures2{
+  width: 25%;
+  float: right;
+  margin-left: 30px;
+}
+
+.education_row{
+  width: 50%;
+  margin: 100px auto;
+  text-align: left;
+
+}
+
+ @media  (max-width: 768px) {
+
+  h1{
+    font-size: 10vw;
+  }
+
+  .title_animation{
+    font-size: 5vw;
+  }
+
+  .title_animation::after{
+    font-size: 5vw;
+  }
+
+  .top_container{
+    padding-top: 5em;
+  }
+
+  .top-container-picture{
+    height: 25vh;
+  }
+
+   h2{
+    font-size: 7vw;
+  }
+
+  .profile p, .tech_skills p{
+    width: 80%;
+  }
+
+  .education_row{
+    width: 80%;;
+  }
+  
+ }
